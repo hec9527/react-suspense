@@ -1,0 +1,42 @@
+body {
+}
+
+li {
+  display: inline-block;
+  margin: 0 1em;
+  cursor: pointer;
+  color: #598bee;
+}
+
+.notice {
+  position: relative;
+  margin: 16px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 12px 12px 18px 24px;
+  overflow: hidden;
+}
+
+.notice::before {
+  position: absolute;
+  content: '';
+  background: #598bee;
+  width: 3px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.notice > header {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #598bee;
+  margin-bottom: 4px;
+}
+
+.notice > p {
+  margin: 0;
+  font-size: 0.9em;
+  line-height: 1.6;
+  color: #4d4d4d;
+}
